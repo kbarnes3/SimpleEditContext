@@ -10,6 +10,8 @@ namespace winrt::SimpleEditContext::implementation
 
         int32_t MyProperty();
         void MyProperty(int32_t value);
+
+        winrt::hstring GetSampleText();
     };
 }
 

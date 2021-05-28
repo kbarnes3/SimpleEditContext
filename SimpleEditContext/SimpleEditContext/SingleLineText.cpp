@@ -12,4 +12,9 @@ namespace winrt::SimpleEditContext::implementation
     void SingleLineText::MyProperty(int32_t)
     {
     }
+
+    winrt::hstring SingleLineText::GetSampleText()
+    {
+        return L"Hello from C++/WinRT";
+    }
 }

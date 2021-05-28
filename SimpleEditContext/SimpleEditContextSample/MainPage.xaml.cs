@@ -13,6 +13,8 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
+using SimpleEditContext;
+
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
 namespace SimpleEditContextSample
@@ -29,7 +31,8 @@ namespace SimpleEditContextSample
 
         private void GetTextButton_Click(object sender, RoutedEventArgs e)
         {
-            Output.Text = "Clicked!";
+            SingleLineText singleLine = new SingleLineText();
+            Output.Text = singleLine.GetSampleText();
         }
     }
 }
