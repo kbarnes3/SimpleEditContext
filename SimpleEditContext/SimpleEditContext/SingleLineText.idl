@@ -1,0 +1,9 @@
+namespace SimpleEditContext
+{
+    [default_interface]
+    runtimeclass SingleLineText
+    {
+        SingleLineText();
+        Int32 MyProperty;
+    }
+}
